@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\U\\Desktop\\git project\\school-Task-Mvc--main\\schoolMvc\\schoolMvc.DAL\\schoolMvc.DAL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\U\\Desktop\\git project\\school-Task-Mvc--main\\schoolMvc\\schoolMvc.DAL\\schoolMvc.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\U\\Desktop\\git project\\school-Task-Mvc--main\\schoolMvc\\schoolMvc.DAL\\schoolMvc.DAL.csproj",
+        "projectName": "schoolMvc.DAL",
+        "projectPath": "C:\\Users\\U\\Desktop\\git project\\school-Task-Mvc--main\\schoolMvc\\schoolMvc.DAL\\schoolMvc.DAL.csproj",
+        "packagesPath": "C:\\Users\\U\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\U\\Desktop\\git project\\school-Task-Mvc--main\\schoolMvc\\schoolMvc.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\U\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\U\\Desktop\\git project\\school-Task-Mvc--main\\schoolMvc\\schoolMvc.Ref\\schoolMvc.Ref.csproj": {
+                "projectPath": "C:\\Users\\U\\Desktop\\git project\\school-Task-Mvc--main\\schoolMvc\\schoolMvc.Ref\\schoolMvc.Ref.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\U\\Desktop\\git project\\school-Task-Mvc--main\\schoolMvc\\schoolMvc.Ref\\schoolMvc.Ref.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\U\\Desktop\\git project\\school-Task-Mvc--main\\schoolMvc\\schoolMvc.Ref\\schoolMvc.Ref.csproj",
+        "projectName": "schoolMvc.Ref",
+        "projectPath": "C:\\Users\\U\\Desktop\\git project\\school-Task-Mvc--main\\schoolMvc\\schoolMvc.Ref\\schoolMvc.Ref.csproj",
+        "packagesPath": "C:\\Users\\U\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\U\\Desktop\\git project\\school-Task-Mvc--main\\schoolMvc\\schoolMvc.Ref\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\U\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.30, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.30, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+﻿@model IEnumerable<TeacherTaskVM>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>All Tasks</h1>
+<br />
+<br />
+
+
+
+
+
+<div class="row justify-content-center align-items-center m-5">
+    <form asp-action="Index" class="row col-8 ">
+        <div class="col-8">
+            <input type="text" class="form-control" name="SearchInput" id="SearchInput" placeholder="Search By Name" />
+        </div>
+        <div class="col-4">
+            <input type="submit" class="btn btn-success" value="Search" />
+        </div>
+    </form>
+</div>
+
+
+
+
+@if (Model.Count() > 0)
+{
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(D => D.Date)</th>
+                <th>@Html.DisplayNameFor(D => D.Description)</th>
+                <th>@Html.DisplayNameFor(D => D.Period)</th>
+                <th>@Html.DisplayNameFor(D => D.StudentName)</th>
+                <th>@Html.DisplayNameFor(D => D.Status)</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var task in Model)
+            {
+                <tr>
+
+                    <td>@task.Date</td>
+                    <td>@task.Description</td>
+                    <td>@task.Period</td>
+                    <td>@task.StudentName</td>
+                    <td>@task.Status</td>
+                    <td>
+                        <a asp-action="EditTeacher" asp-route-id="@task.Id" class="btn btn-success">
+                            <i class="fas fa-edit"></i>Update
+                        </a>
+                    </td>
+
+                    <td>
+                        <a asp-action="DeleteTask" asp-route-id="@task.Id" class="btn btn-danger">
+                            <i class="fas fa-trash"></i>Delete
+                        </a>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="mt-4 alert alert-warning">
+        <h3>There is No Tasks:(</h3>
+    </div>
+}

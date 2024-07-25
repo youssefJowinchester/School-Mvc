@@ -1,0 +1,31 @@
+﻿@model UserViewModel
+
+@{
+    ViewData["Title"] = "Update User";
+}
+<h1>Update User for @Model.UserName</h1>
+<div class="row text">
+    <div class="col-md-8 offset-2">
+
+        <div class="row">
+            <div class="col-md-8 offset-2">
+                <form asp-action="Edit" method="post">
+
+                    <partial name="UserPartialView/_CreateEditUserPartialView" />
+
+                    <div class="form-group">
+                        <input type="submit" value="Edit" class="btn btn-outline-success float-right" />
+                        <a class="btn btn-outline-secondary" asp-action="Index">Show All</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@section ValidationScriptSection {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
